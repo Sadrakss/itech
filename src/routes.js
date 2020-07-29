@@ -1,10 +1,9 @@
 const express = require('express');
-
 const routes = express.Router();
 
-routes.get('/', (request, response) => {
-    response.json({ Message: "Hello World!" })
-})
+const formController = require('./controllers/formController');
+
+routes.post(formController.store)
 
 
 module.exports = routes;
