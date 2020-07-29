@@ -1,7 +1,7 @@
-const form = require('../models/form');
+//const form = require('../models/form');
 
 module.exports = {
     async store(request,response){
-        response.json({Mesage:'IS WORKING..'})
+        response.json({Message:'IS WORKING..'})
     }
 }
