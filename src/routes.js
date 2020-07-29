@@ -3,7 +3,8 @@ const routes = express.Router();
 
 const formController = require('./controllers/formController');
 
-routes.get('/',formController.store);
+routes.get('/form', formController.index);
+routes.post('/form', formController.store);
 
 
 module.exports = routes;

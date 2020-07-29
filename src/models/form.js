@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const FormSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        required: true,
+    },
     name: {
         type: String,
         required: true,
@@ -47,4 +51,4 @@ const FormSchema = new mongoose.Schema({
         required: true,
     },
 });
-module.exports = mongoose.model('Form', FormSchema)
+module.exports = mongoose.model('Form', FormSchema);
